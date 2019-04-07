@@ -1,5 +1,5 @@
 bits 32
-
+;program to print number from 1 to 100
 extern printf
 
 section .data
