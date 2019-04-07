@@ -1,5 +1,5 @@
 BITS 32
-
+;program to print mutiplication table from 1 to 10
 extern printf
 
 
