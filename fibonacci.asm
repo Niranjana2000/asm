@@ -76,7 +76,6 @@ section .text
 		cmp ecx,DWORD[num]	;if ecx=num
 		jl l1
 		
-	l2:
 		mov esp,ebp
 		pop ebp
 
