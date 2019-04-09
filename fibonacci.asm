@@ -23,21 +23,18 @@ section .text
 		mov ebp,esp
 
 
-		push request
-		call printf
+		push request	
+		call printf	;prints request
 		
 		
 		
 		push num
 		push format
 		call scanf
-	
-		cmp DWORD[num],0
-		je l2
 
 		
 		push print
-		call printf
+		call printf	
 
 
 		mov ebx,0   ;first number
@@ -45,7 +42,7 @@ section .text
 		push out
 		call printf
 
-		cmp DWORD[num],1
+		cmp DWORD[num],1	;checks num=1
 		je l2
 		
 
@@ -54,12 +51,12 @@ section .text
 		mov ecx,1   ;second number
 		push ecx
 		push out
-		call printf
+		call printf		
 
-		cmp DWORD[num],2
+		cmp DWORD[num],2	;check num=2
 		je l2
 		
-		sub DWORD[num],2
+		sub DWORD[num],2	;num-2
 		
 
 		
@@ -76,7 +73,7 @@ section .text
 	
 		mov ebx, DWORD [a]  ;ebx=ecx
 		mov ecx, DWORD [b]  ;ecx=edx 
-		cmp ecx,DWORD[num]	;if ecx=13
+		cmp ecx,DWORD[num]	;if ecx=num
 		jl l1
 		
 	l2:
