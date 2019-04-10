@@ -76,7 +76,7 @@ section .text
 
 		add DWORD[inc],1
 		mov edx,DWORD[inc]
-		cmp edx,DWORD[num]	;if ecx=num
+		cmp edx,DWORD[num]	;if edx=num
 		jl l1
 		
 	l2:
